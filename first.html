@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="shortcut icon" href="wallpaper/favicon2.ico" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Welcome Screen</title>
+	<link rel="stylesheet" href="css/style-intro.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+	<style type = "text/css">
+		@keyframes spin{
+	0%{
+		transform: rotate(0deg);
+		}
+	100%{
+		transform: rotate(360deg);
+		}
+      }
+	</style>
+<body>
+	<video autoplay muted loop id="myVideo">
+		<source src="wallpaper/background.mp4" type="video/mp4">
+	</video> 
+		
+	
+	
+	</div>
+	<div class="container">
+		<div class="data" >Chorus - Team - Projects </div>
+	</div>
+ 
+
+	<script type="text/javascript">
+	
+	const text = baffle(".data");
+	text.set({
+			characters : '<██ ░▓▓░> ▓░░░▓ █/▓ ▓>█░▓ ██▒░ ▓<▒ █░▒█ <█▒▒',
+			speed: 120
+	});
+	text.start();
+	text.reveal(8000);
+	
+	</script>
+	<div class="load">
+		<a href = "index.html"> <img src="logo/logo_reversed.png" width= "100px" height="100px"title="Enter site"> </a>
+	
+	</div>
+	<script>
+	setTimeout(function(){
+    window.location.reload(1);
+	}, 60000);
+	</script>
+
+</body>
+</html>

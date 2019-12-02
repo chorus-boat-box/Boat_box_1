@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> SHIP DETECTOR </title>
+	<link rel="stylesheet" type="text/css" href="css/style-map.css">
+	<link rel="shortcut icon" href="wallpaper/favicon2.ico" />
+
+</head>
+<body>
+	<header>
+		<div class="main">
+			<div class="logo">
+				<a href="first.html"><img src="logo/logo.png"></a>
+
+			</div>
+
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="live.html">Live</a></li>
+				<li class ="active"><a href="map.html">Map</a></li>
+				<li><a href="video.html">Video</a></li>
+				<li><a href="history.html">History</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</div>
+
+		<div class="title">
+			<h1>Last map recorded</h1>
+		</div>
+		<div class="image">
+			<img src = "" id = "myImage" width = "640" height = "400" class = "center" />
+		</div>
+
+	</header>
+	<script type = "text/javascript">
+	
+		setInterval (function () {
+		var myImageElement = document.getElementById('myImage');
+		myImageElement.src ="map.jpg?rand=" + Math.random();
+	}, 1000);
+
+	</script>
+</body>
+</html>

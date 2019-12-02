@@ -1,0 +1,57 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	#background: #101010;
+	#position: absolute;
+}
+
+.data {
+	text-decoration: none;
+	font-family: Poppins;
+	color: #fff;
+	font-size: 30px;
+	letter-spacing: 12px;
+	font-weight: 600;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 90%;
+	
+}
+
+.load {
+	position: absolute;
+	top: 70%;
+	left: 45%;
+	transform: translate(-50%, -50%);
+	animation: spin 10s linear infinite;
+	
+}
+
+.slide-in {
+	animation: slide-in 0.5s ease forwards;
+}
+
+@keyframes slide-in{
+	from {
+		transform: translateX(100%);
+		visibility: visible;
+	}
+	to{
+		transform: translateX(0%);
+	}
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+video {
+  object-fit: fill;
+}
