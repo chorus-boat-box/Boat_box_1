@@ -5,6 +5,8 @@
 	<title> SHIP DETECTOR </title>
 	<link rel="stylesheet" type="text/css" href="css/style-live.css">
 	<link rel="shortcut icon" href="wallpaper/favicon2.ico" />
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 
 </head>
 <body>
@@ -28,7 +30,7 @@
 		<div class="title">
 			<h1>Live Data</h1>
 		</div>
-	<div class = "1">	
+	<div class = "1">
 		<div class="subtitle1">
 			<h1>Point of view</h1>
 		</div>
@@ -44,12 +46,12 @@
 			<img src = "" id = "myImage2" width = "450" height = "300" class = "center" />
 		</div>
 	</div>
+
+ 
 </header>
 
-	
- 
 	<script type = "text/javascript">
-	
+
 		setInterval (function () {
 		var myImageElement = document.getElementById('myImage1');
 		myImageElement.src ="live.jpg?rand=" + Math.random();
@@ -57,13 +59,13 @@
 
 	</script>
 	<script type = "text/javascript">
-	
+
 		setInterval (function () {
 		var myImageElement = document.getElementById('myImage2');
 		myImageElement.src ="map_live.jpg?rand=" + Math.random();
 	}, 1000);
 
 	</script>
-	
+
 </body>
 </html>
